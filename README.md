@@ -5,3 +5,10 @@
 ```bash
 $ git push origin HEAD -u 
 ```
+
+### linux 系统安装 redis 后，查看 redis 记录
+```bash
+$ redis-cli -h 127.0.0.1 -p [端口号]
+$ auth [密码]
+$ key *
+```
