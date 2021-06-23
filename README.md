@@ -18,3 +18,10 @@ $ key *
 $ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
 ```
 
+### netcore 实体类生成脚本（Mysql版）
+```bash
+$ dotnet ef dbcontext scaffold [数据库连接字符串] Pomelo.EntityFrameworkCore.MySql --output-dir Models --namespace [命名空间]
+```
+> 数据库连接字符串要加上 Allow User Variables=True 原因为啥搞忘了
+
+
